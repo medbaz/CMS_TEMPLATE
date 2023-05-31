@@ -23,26 +23,18 @@
 
                         if ( isset($_GET["source"]) ) {
                             $source = $_GET["source"];   } else{
-                                $source = "view_all_posts" ;
+                                $source = "view_all_comments" ;
                             }
                                 switch ($source  ) {
-                                    case 'add_post':
-                                        include "includes/add_post.php";
-                                        break;
-                                    case 'edit_post':
-                                        include "includes/edit_post.php";
-                                        break;
-                                        case 'view_all_comments':
+                                     
+                                    // case 'edite':
+                                    //     include "includes/edit_post.php";
+                                    //     break;
+                                    case 'view_all_comments':
                                             include "includes/view_all_comments.php";
                                             break;
-                                    case 'view_all_users':
-                                        include "includes/view_all_users.php";
-                                        break;
-                                    case 'view_all_posts':
-                                        include "includes/view_all_posts.php";
-                                        break;
                                     default:
-                                        include "includes/view_all_posts.php";
+                                        include "includes/view_all_comments.php";
                                         break;
                             }
                            
