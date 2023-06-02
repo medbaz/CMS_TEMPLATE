@@ -23,7 +23,7 @@
  
 
 <div class="well">
-    <form action="includes/login.php" method="post" >
+    <form action="./includes/login.php" method="post" >
     <h4>Login</h4>
     <div class="input-group">
         <div class="form-group">

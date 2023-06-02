@@ -21,7 +21,7 @@
                 
                 <?php 
             
-                    $all_posts = mysqli_query($connection,'SELECT * FROM posts');
+                    $all_posts = mysqli_query($connection,"SELECT * FROM posts");
 
                     if (isset($_POST['submit'])) {      $myrow = "num_rows" ;
                         $SearchQeury = $_POST["SearchBar"] ;
